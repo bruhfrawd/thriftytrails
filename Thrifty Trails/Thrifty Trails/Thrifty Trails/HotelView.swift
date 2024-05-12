@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HotelView: View {
+    @State private var selectedHotels: [String] = []
+
     // Dummy data for hotels
     let hotels = [
         ("Hotel Sunshine", "$100/night", "hotel_sunshine"),
@@ -43,7 +45,7 @@ struct HotelView: View {
                     }
                     .padding(.top, 20)
 
-                    // "Add Hotel" section as shown in your sketch
+                    // "Add Hotel" section
                     VStack(alignment: .leading) {
                         Text("Add Hotel")
                             .font(.title)
@@ -70,6 +72,9 @@ struct HotelView: View {
                                     .background(Color.white)
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
+                                    .onTapGesture {
+                                        addHotelToList(hotelName: hotel.0)
+                                    }
                                 }
                             }
                             .padding(.horizontal)
@@ -77,8 +82,27 @@ struct HotelView: View {
                     }
                     .padding()
 
+                    // List of selected hotels
+                    if !selectedHotels.isEmpty {
+                        VStack(alignment: .leading) {
+                            Text("Selected Hotels")
+                                .font(.title2)
+                                .padding(.vertical)
+                            
+                            ForEach(selectedHotels, id: \.self) { hotel in
+                                Text(hotel)
+                                    .padding(10)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 5)
+                                            .stroke(Color.blue, lineWidth: 2)
+                                    )
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+
                     Spacer()
-                    Text("STILL IN DEVELOPMENT -Fahad")
+                    
                 }
             }
         }
@@ -93,5 +117,12 @@ struct HotelView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
     }
+    
+    func addHotelToList(hotelName: String) {
+        if !selectedHotels.contains(hotelName) {
+            selectedHotels.append(hotelName)
+        }
+    }
 }
+
 
