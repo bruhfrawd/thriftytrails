@@ -16,43 +16,61 @@ struct ExploreView: View {
     
     var body: some View {
         let joinedCities = arrayOfCities.joined(separator: ", ")
+        
         ZStack{
             Color("Brand")
             ZStack{
-                Color("Background")
                 VStack{
-                    HStack(spacing: 70){
-                        VStack{
-                            Text("Date of Trip:")
-                                .font(.title)
-                            Text("\(dateSample)")
-                                .font(.system(size: 20))
-                            
+                    ZStack{
+                        Color(.white)
+                        HStack(spacing: 70){
+                            VStack{
+                                Text("Date of Trip:")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("Brand"))
+                                Text("\(dateSample)")
+                                    .font(.system(size: 16))
+                                    .foregroundColor(Color("Brand"))
+                            }
+                            VStack{
+                                Text("Length: ")
+                                    .font(.title)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color("Brand"))
+                                Text("\(numDays) days")
+                                    .font(.system(size: 16))
+                                    .foregroundColor(Color("Brand"))
+                            }
                         }
-                        VStack{
-                            Text("Length: ")
-                                .font(.title)
-                            Text("\(numDays) days")
-                                .font(.system(size: 20))
-                        }
+                        .padding(.top, 10)
                     }
-                    .padding(.top, 10)
-                    Text(joinedCities)
-                        .padding()
-                        .frame(alignment: .leading)
-                    
+                    HStack{
+                        Image(systemName: "location.square")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(Color("Brand"))
+                            .fontWeight(.bold)
+                            .padding(.leading, 5)
+                        
+                        Text(joinedCities)
+                            .padding(.vertical)
+                            .font(.system(size:23))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     // Sliding window for cities
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 20) {
                             ForEach(arrayOfCities, id: \.self) { city in
                                 VStack {
-                                    Image(city)  // Assuming you have images named after each city in your assets
-                                        .resizable() // Makes the image resizable
-                                        .scaledToFill() // Maintains the image's aspect ratio while filling the frame
+                                    Image(city)  // Assuming we have images named after each city in your assets
+                                        .resizable()
+                                        .scaledToFill()
                                         .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-                                        .frame(width: 200, height: 450) // Specifies the frame size
-                                        .clipped() // Clips the overflowing parts of the image to fit the frame
+                                        .frame(width: 200, height: 450)
+                                        .clipped()
                                     Text(city)
+                                        .fontWeight(.bold)
                                 }
                             }
                         }
@@ -65,7 +83,7 @@ struct ExploreView: View {
                     //ITINERARY, ABOUT, and HOTEL BUTTONS
                     Spacer()
                     ZStack{
-                        Color(.white)
+                        Color("Brand")
                         HStack(spacing: 5) {
                             NavigationLink(destination: ItineraryView()){
                                 Image("btn_itinerary")
@@ -87,12 +105,14 @@ struct ExploreView: View {
                                 
                             }
                         }
+                        .padding(.vertical, 5)
                     }
-                    .padding(.top, 40)
+                    .padding(.top, 30)
                     .padding(.bottom, 0)
                     
                 }
             }
+            .brandBackground()
             .padding(.horizontal, 3)
             .padding(.vertical, 3)
             
@@ -101,19 +121,21 @@ struct ExploreView: View {
             ToolbarItem(placement: .navigationBarLeading){
                 Image(systemName: "house")
                     .foregroundColor(Color("Brand"))
-                
+                    .fontWeight(.bold)
             }
             ToolbarItem(placement: .principal){
                 Text("Home")
                     .foregroundColor(Color("Brand"))
-                    .font(.title)
+                    .brandStyleTitle()
             }
             ToolbarItem(placement: .navigationBarTrailing){
                 Image(systemName: "person.crop.circle" )
                     .foregroundColor(Color("Brand"))
+                    .fontWeight(.bold)
                 
             }
         }
+        .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
         
     }
