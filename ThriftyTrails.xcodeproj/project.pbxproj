@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		931A9DAC2BE9E8E300C18D83 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A9DAB2BE9E8E300C18D83 /* CardListView.swift */; };
+		937888D72BE8AD2300FA876D /* PlanAdventureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888D62BE8AD2300FA876D /* PlanAdventureView.swift */; };
+		937888E92BE8BEA300FA876D /* RoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888E52BE8BEA300FA876D /* RoundSlider.swift */; };
+		937888EA2BE8BEA300FA876D /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888E62BE8BEA300FA876D /* RangeSlider.swift */; };
+		937888EB2BE8BEA300FA876D /* Comparable-Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888E82BE8BEA300FA876D /* Comparable-Clamped.swift */; };
+		938DEDF02BE7F66700C65835 /* ThriftyTrailsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEDEF2BE7F66700C65835 /* ThriftyTrailsApp.swift */; };
+		938DEDF42BE7F66800C65835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938DEDF32BE7F66800C65835 /* Assets.xcassets */; };
+		938DEDF72BE7F66800C65835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938DEDF62BE7F66800C65835 /* Preview Assets.xcassets */; };
+		938DEE1C2BE7F69F00C65835 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE1B2BE7F69F00C65835 /* LoginView.swift */; };
+		938DEE1F2BE7F6CA00C65835 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE1E2BE7F6CA00C65835 /* SplashView.swift */; };
+		938DEE222BE7F7FA00C65835 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE212BE7F7FA00C65835 /* SharedData.swift */; };
+		938DEE262BE7F8E900C65835 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE252BE7F8E900C65835 /* SignupView.swift */; };
+		938DEE2B2BE7FD4D00C65835 /* ToDoThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE2A2BE7FD4D00C65835 /* ToDoThingsView.swift */; };
+		938DEE2E2BE7FF6700C65835 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE2D2BE7FF6700C65835 /* CardView.swift */; };
+		938DEE302BE8001B00C65835 /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DEE2F2BE8001B00C65835 /* OptionModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		931A9DAB2BE9E8E300C18D83 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		937888D62BE8AD2300FA876D /* PlanAdventureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAdventureView.swift; sourceTree = "<group>"; };
+		937888E52BE8BEA300FA876D /* RoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundSlider.swift; sourceTree = "<group>"; };
+		937888E62BE8BEA300FA876D /* RangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		937888E82BE8BEA300FA876D /* Comparable-Clamped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable-Clamped.swift"; sourceTree = "<group>"; };
+		938DEDEC2BE7F66700C65835 /* ThriftyTrails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThriftyTrails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938DEDEF2BE7F66700C65835 /* ThriftyTrailsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftyTrailsApp.swift; sourceTree = "<group>"; };
+		938DEDF32BE7F66800C65835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		938DEDF62BE7F66800C65835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		938DEE1B2BE7F69F00C65835 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		938DEE1E2BE7F6CA00C65835 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		938DEE212BE7F7FA00C65835 /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		938DEE252BE7F8E900C65835 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		938DEE2A2BE7FD4D00C65835 /* ToDoThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoThingsView.swift; sourceTree = "<group>"; };
+		938DEE2D2BE7FF6700C65835 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		938DEE2F2BE8001B00C65835 /* OptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938DEDE92BE7F66700C65835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		937888D52BE8AD1300FA876D /* PlanAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				937888D62BE8AD2300FA876D /* PlanAdventureView.swift */,
+			);
+			path = PlanAdventure;
+			sourceTree = "<group>";
+		};
+		937888D82BE8BBA400FA876D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				937888E42BE8BEA300FA876D /* MultiThumbSlider */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		937888E42BE8BEA300FA876D /* MultiThumbSlider */ = {
+			isa = PBXGroup;
+			children = (
+				937888E52BE8BEA300FA876D /* RoundSlider.swift */,
+				937888E62BE8BEA300FA876D /* RangeSlider.swift */,
+				937888E72BE8BEA300FA876D /* Internals */,
+			);
+			path = MultiThumbSlider;
+			sourceTree = "<group>";
+		};
+		937888E72BE8BEA300FA876D /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				937888E82BE8BEA300FA876D /* Comparable-Clamped.swift */,
+			);
+			path = Internals;
+			sourceTree = "<group>";
+		};
+		938DEDE32BE7F66700C65835 = {
+			isa = PBXGroup;
+			children = (
+				938DEDEE2BE7F66700C65835 /* ThriftyTrails */,
+				938DEDED2BE7F66700C65835 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		938DEDED2BE7F66700C65835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938DEDEC2BE7F66700C65835 /* ThriftyTrails.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938DEDEE2BE7F66700C65835 /* ThriftyTrails */ = {
+			isa = PBXGroup;
+			children = (
+				937888D82BE8BBA400FA876D /* Helpers */,
+				938DEE202BE7F7E900C65835 /* Models */,
+				938DEE192BE7F68B00C65835 /* Screens */,
+				938DEDEF2BE7F66700C65835 /* ThriftyTrailsApp.swift */,
+				938DEDF32BE7F66800C65835 /* Assets.xcassets */,
+				938DEDF52BE7F66800C65835 /* Preview Content */,
+			);
+			path = ThriftyTrails;
+			sourceTree = "<group>";
+		};
+		938DEDF52BE7F66800C65835 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				938DEDF62BE7F66800C65835 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		938DEE192BE7F68B00C65835 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				937888D52BE8AD1300FA876D /* PlanAdventure */,
+				938DEE292BE7FD3D00C65835 /* ToDoThings */,
+				938DEE242BE7F8E000C65835 /* Signup */,
+				938DEE1D2BE7F6C000C65835 /* Splash */,
+				938DEE1A2BE7F69400C65835 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		938DEE1A2BE7F69400C65835 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE1B2BE7F69F00C65835 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		938DEE1D2BE7F6C000C65835 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE1E2BE7F6CA00C65835 /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		938DEE202BE7F7E900C65835 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE212BE7F7FA00C65835 /* SharedData.swift */,
+				938DEE2F2BE8001B00C65835 /* OptionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		938DEE242BE7F8E000C65835 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE252BE7F8E900C65835 /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		938DEE292BE7FD3D00C65835 /* ToDoThings */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE2A2BE7FD4D00C65835 /* ToDoThingsView.swift */,
+				938DEE2C2BE7FF4B00C65835 /* Components */,
+			);
+			path = ToDoThings;
+			sourceTree = "<group>";
+		};
+		938DEE2C2BE7FF4B00C65835 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				938DEE2D2BE7FF6700C65835 /* CardView.swift */,
+				931A9DAB2BE9E8E300C18D83 /* CardListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		938DEDEB2BE7F66700C65835 /* ThriftyTrails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938DEE102BE7F66800C65835 /* Build configuration list for PBXNativeTarget "ThriftyTrails" */;
+			buildPhases = (
+				938DEDE82BE7F66700C65835 /* Sources */,
+				938DEDE92BE7F66700C65835 /* Frameworks */,
+				938DEDEA2BE7F66700C65835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThriftyTrails;
+			productName = ThriftyTrails;
+			productReference = 938DEDEC2BE7F66700C65835 /* ThriftyTrails.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938DEDE42BE7F66700C65835 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					938DEDEB2BE7F66700C65835 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 938DEDE72BE7F66700C65835 /* Build configuration list for PBXProject "ThriftyTrails" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 938DEDE32BE7F66700C65835;
+			productRefGroup = 938DEDED2BE7F66700C65835 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				938DEDEB2BE7F66700C65835 /* ThriftyTrails */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		938DEDEA2BE7F66700C65835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938DEDF72BE7F66800C65835 /* Preview Assets.xcassets in Resources */,
+				938DEDF42BE7F66800C65835 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		938DEDE82BE7F66700C65835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938DEE222BE7F7FA00C65835 /* SharedData.swift in Sources */,
+				938DEE1C2BE7F69F00C65835 /* LoginView.swift in Sources */,
+				937888D72BE8AD2300FA876D /* PlanAdventureView.swift in Sources */,
+				937888EB2BE8BEA300FA876D /* Comparable-Clamped.swift in Sources */,
+				938DEDF02BE7F66700C65835 /* ThriftyTrailsApp.swift in Sources */,
+				937888EA2BE8BEA300FA876D /* RangeSlider.swift in Sources */,
+				938DEE302BE8001B00C65835 /* OptionModel.swift in Sources */,
+				938DEE262BE7F8E900C65835 /* SignupView.swift in Sources */,
+				937888E92BE8BEA300FA876D /* RoundSlider.swift in Sources */,
+				938DEE1F2BE7F6CA00C65835 /* SplashView.swift in Sources */,
+				938DEE2E2BE7FF6700C65835 /* CardView.swift in Sources */,
+				931A9DAC2BE9E8E300C18D83 /* CardListView.swift in Sources */,
+				938DEE2B2BE7FD4D00C65835 /* ToDoThingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		938DEE0E2BE7F66800C65835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		938DEE0F2BE7F66800C65835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		938DEE112BE7F66800C65835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThriftyTrails/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afterlife.ThriftyTrails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		938DEE122BE7F66800C65835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThriftyTrails/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afterlife.ThriftyTrails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		938DEDE72BE7F66700C65835 /* Build configuration list for PBXProject "ThriftyTrails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938DEE0E2BE7F66800C65835 /* Debug */,
+				938DEE0F2BE7F66800C65835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938DEE102BE7F66800C65835 /* Build configuration list for PBXNativeTarget "ThriftyTrails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938DEE112BE7F66800C65835 /* Debug */,
+				938DEE122BE7F66800C65835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 938DEDE42BE7F66700C65835 /* Project object */;
+}
