@@ -2,7 +2,7 @@
 //  PlanAdventureView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 06/05/24.
+//  Created by Tanvi Shah on 06/05/24.
 //
 
 import SwiftUI
@@ -55,27 +55,27 @@ struct PlanAdventureView: View {
 }
 
 extension PlanAdventureView {
-    /// main title
+    // main title
     var title: some View {
         Text("Plan your next\nadventure")
             .font(.title)
             .fontWeight(.heavy)
     }
     
-    /// this will give you text with body font
+    // this will give you text with body font
     func getBodyText(_ text: String) -> some View {
         Text(text)
             .font(.body)
     }
     
-    /// this will give you text with footnote font
+    // this will give you text with footnote font
     func getFootnoteText(_ text: String, color: Color) -> some View {
         Text(text)
             .font(.footnote)
             .foregroundStyle(color)
     }
     
-    /// country and dates container view
+    // country and dates container view
     var countryAndDatesView: some View {
         HStack {
             Menu {
@@ -105,7 +105,7 @@ extension PlanAdventureView {
         } //: HStack
     }
     
-    /// number of persons view
+    // number of persons view
     var personCountView: some View {
         HStack(spacing: 16) {
             Text("\(numberOfPerson)")
@@ -118,7 +118,7 @@ extension PlanAdventureView {
         } //: HStack
     }
     
-    /// first time visit toggle option
+    // first time visit toggle option
     var firstVisitingTimeContainer: some View {
         HStack {
             getBodyText("First time visiting?")
@@ -128,7 +128,7 @@ extension PlanAdventureView {
         } //: HStack
     }
     
-    /// divider
+    // divider
     var line: some View {
         Color.gray
             .opacity(0.4)
@@ -136,7 +136,7 @@ extension PlanAdventureView {
             .frame(maxWidth: .infinity)
     }
     
-    /// select your range of budget
+    // select your range of budget
     var selectBudgetView: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {

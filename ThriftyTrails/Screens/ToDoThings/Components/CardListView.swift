@@ -2,12 +2,12 @@
 //  CardListView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 07/05/24.
+//  Created by Tanvi Shah on 07/05/24.
 //
 
 import SwiftUI
 
-/// Showing list of cards in the Grid
+// Showing list of cards in the Grid
 struct CardListView: View {
     
     // MARK: - Properties

@@ -2,7 +2,7 @@
 //  Signupview.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 05/05/24.
+//  Created by Tanvi Shah on 05/05/24.
 //
 
 import SwiftUI
@@ -34,7 +34,7 @@ extension SignupView {
     
     // MARK: - Components
     
-    /// title
+    // title
     var header: some View {
         HStack {
             Text("New\nAccount")
@@ -57,7 +57,7 @@ extension SignupView {
         }
     }
     
-    /// email text field
+    // email text field
     var emailTextfield: some View {
         VStack {
             TextField("Email", text: $email)
@@ -66,7 +66,7 @@ extension SignupView {
         }
     }
     
-    /// username text field
+    // username text field
     var usernameTextfield: some View {
         VStack {
             TextField("Username", text: $username)
@@ -75,7 +75,7 @@ extension SignupView {
         }
     }
     
-    /// password text field
+    // password text field
     var passwordTextfield: some View {
         VStack {
             TextField("Password", text: $password)
@@ -84,7 +84,7 @@ extension SignupView {
         }
     }
     
-    /// signup button for moving on to next screen
+    // signup button for moving on to next screen
     var signupButton: some View {
         Button(action: {
         }, label: {

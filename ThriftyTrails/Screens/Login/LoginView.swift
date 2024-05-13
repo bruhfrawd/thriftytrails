@@ -2,7 +2,7 @@
 //  LoginView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 05/05/24.
+//  Created by Tanvi Shah on 05/05/24.
 //
 
 import SwiftUI
@@ -37,7 +37,7 @@ struct LoginView: View {
 extension LoginView {
     
     // MARK: - Components
-    /// title
+    // title
     var header: some View {
         HStack {
             Text("Welcome Back\nKenvin")
@@ -61,7 +61,7 @@ extension LoginView {
         } //: HStack
     }
     
-    /// email text field
+    // email text field
     var emailTextfield: some View {
         VStack {
             TextField("Email", text: $email)
@@ -69,7 +69,7 @@ extension LoginView {
                 .frame(height: 0.5)
         }
     }
-    /// password text field
+    // password text field
     var passwordTextfield: some View {
         VStack {
             TextField("Password", text: $password)
@@ -78,7 +78,7 @@ extension LoginView {
         }
     }
     
-    /// login button to go to next screen
+    // login button to go to next screen
     var loginButton: some View {
         Button(action: {
             goToPlanAdventure = true
@@ -94,7 +94,7 @@ extension LoginView {
         })
     }
     
-    /// button for signup
+    // button for signup
     var thisIsNotMeButton: some View {
         NavigationLink {
             SignupView()
@@ -103,7 +103,7 @@ extension LoginView {
         }
     }
     
-    /// social login buttons container view
+    // social login buttons container view
     var socialLoginButtons: some View {
         HStack {
             Button {

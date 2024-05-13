@@ -2,12 +2,12 @@
 //  CardView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 05/05/24.
+//  Created by Tanvi Shah on 05/05/24.
 //
 
 import SwiftUI
 
-/// Card view for showing options
+// Card view for showing options
 struct CardView: View {
     
     // MARK: - Properties
@@ -19,7 +19,7 @@ struct CardView: View {
     
     var body: some View {
         Button(action: {
-            selectedOption = option /// passing tapped option for showing this card as selected
+            selectedOption = option // passing tapped option for showing this card as selected
         }, label: {
             VStack {
                 Text(option.title)

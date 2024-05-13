@@ -2,7 +2,7 @@
 //  SplashView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 05/05/24.
+//  Created by Tanvi Shah on 05/05/24.
 //
 
 import SwiftUI

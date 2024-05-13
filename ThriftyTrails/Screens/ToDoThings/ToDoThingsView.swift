@@ -2,7 +2,7 @@
 //  ToDoThingsView.swift
 //  ThriftyTrails
 //
-//  Created by Gaganjot Singh on 05/05/24.
+//  Created by Tanvi Shah on 05/05/24.
 //
 
 import SwiftUI
@@ -62,7 +62,7 @@ extension ToDoThingsView {
     
     // MARK: - Components
     
-    /// title view
+    // title view
     var titleView: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Things to do\nin your trip")
@@ -73,13 +73,13 @@ extension ToDoThingsView {
         }
     }
     
-    /// subtitle View
+    // subtitle View
     var subtitleView: some View {
         Text("How packed you want your trip?")
             .font(.body)
     }
     
-    /// build my trip button that will navigate to next screen
+    // build my trip button that will navigate to next screen
     var buildMyTripButton: some View {
         Button(action: {
             loading = true
