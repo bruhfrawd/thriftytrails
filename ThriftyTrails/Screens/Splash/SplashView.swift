@@ -17,11 +17,11 @@ struct SplashView: View {
     
     var body: some View {
         VStack(spacing: 32) {
-            Text("Thrifty\nTrails")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-            Spacer().frame(height: 200)
+            Image(.logoWhite)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 340)
+            Spacer().frame(height: 20)
             Button(action: {
                 sharedData.screen = .login
             }, label: {
