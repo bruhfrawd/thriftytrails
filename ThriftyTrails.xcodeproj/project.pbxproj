@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B8C38672BF68DD100249C1E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8C38662BF68DD100249C1E /* SQLite */; };
+		5B8C38692BF6900B00249C1E /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38682BF6900B00249C1E /* DatabaseManager.swift */; };
 		931A9DAC2BE9E8E300C18D83 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A9DAB2BE9E8E300C18D83 /* CardListView.swift */; };
 		937888D72BE8AD2300FA876D /* PlanAdventureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888D62BE8AD2300FA876D /* PlanAdventureView.swift */; };
 		937888E92BE8BEA300FA876D /* RoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888E52BE8BEA300FA876D /* RoundSlider.swift */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B8C38682BF6900B00249C1E /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		931A9DAB2BE9E8E300C18D83 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		937888D62BE8AD2300FA876D /* PlanAdventureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAdventureView.swift; sourceTree = "<group>"; };
 		937888E52BE8BEA300FA876D /* RoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundSlider.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8C38672BF68DD100249C1E /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				937888E42BE8BEA300FA876D /* MultiThumbSlider */,
+				5B8C38682BF6900B00249C1E /* DatabaseManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -204,6 +209,9 @@
 			dependencies = (
 			);
 			name = ThriftyTrails;
+			packageProductDependencies = (
+				5B8C38662BF68DD100249C1E /* SQLite */,
+			);
 			productName = ThriftyTrails;
 			productReference = 938DEDEC2BE7F66700C65835 /* ThriftyTrails.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 938DEDE32BE7F66700C65835;
+			packageReferences = (
+				5B8C38652BF68DD100249C1E /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 938DEDED2BE7F66700C65835 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,6 +275,7 @@
 				937888EB2BE8BEA300FA876D /* Comparable-Clamped.swift in Sources */,
 				938DEDF02BE7F66700C65835 /* ThriftyTrailsApp.swift in Sources */,
 				937888EA2BE8BEA300FA876D /* RangeSlider.swift in Sources */,
+				5B8C38692BF6900B00249C1E /* DatabaseManager.swift in Sources */,
 				938DEE302BE8001B00C65835 /* OptionModel.swift in Sources */,
 				938DEE262BE7F8E900C65835 /* SignupView.swift in Sources */,
 				937888E92BE8BEA300FA876D /* RoundSlider.swift in Sources */,
@@ -474,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B8C38652BF68DD100249C1E /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B8C38662BF68DD100249C1E /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B8C38652BF68DD100249C1E /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 938DEDE42BE7F66700C65835 /* Project object */;
 }

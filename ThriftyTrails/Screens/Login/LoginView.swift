@@ -14,7 +14,10 @@ struct LoginView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var goToPlanAdventure = false
-    
+    @State var showSuccessMessage = false
+    @State var showErrorAlert = false
+    @State var loginStatusMessage = ""
+
     @Environment(SharedData.self) var sharedData
         
     // MARK: - Body
@@ -22,14 +25,23 @@ struct LoginView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             header
-            thisIsNotMeButton
+            emailTextfield
             passwordTextfield
             loginButton
+            thisIsNotMeButton
             socialLoginButtons
+            if showSuccessMessage {
+                Text(loginStatusMessage)
+                    .foregroundColor(.green)
+                    .padding(.top)
+            }
         }
         .padding(.horizontal)
         .navigationDestination(isPresented: $goToPlanAdventure) {
             PlanAdventureView()
+        }
+        .alert(isPresented: $showErrorAlert) {
+            Alert(title: Text("Login Failed"), message: Text("Invalid email or password"), dismissButton: .default(Text("OK")))
         }
     }
 }
@@ -44,10 +56,9 @@ extension LoginView {
                 .font(.title)
                 .fontWeight(.bold)
             
-            
             Spacer()
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {}, label: {
                 Circle()
                     .fill()
                     .frame(width: 80)
@@ -58,21 +69,24 @@ extension LoginView {
                             .fontWeight(.bold)
                     }
             })
-        } //: HStack
+        }
     }
     
     // email text field
     var emailTextfield: some View {
         VStack {
             TextField("Email", text: $email)
+                .keyboardType(.emailAddress)
+                .autocapitalization(.none)
             Rectangle()
                 .frame(height: 0.5)
         }
     }
+    
     // password text field
     var passwordTextfield: some View {
         VStack {
-            TextField("Password", text: $password)
+            SecureField("Password", text: $password)
             Rectangle()
                 .frame(height: 0.5)
         }
@@ -81,16 +95,25 @@ extension LoginView {
     // login button to go to next screen
     var loginButton: some View {
         Button(action: {
-            goToPlanAdventure = true
+            if DatabaseManager.shared.verifyUser(email: email, password: password) {
+                loginStatusMessage = "Login Successful!"
+                showSuccessMessage = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    showSuccessMessage = false
+                    goToPlanAdventure = true
+                }
+            } else {
+                showErrorAlert = true
+            }
         }, label: {
             Text("Login")
                 .font(.title3)
                 .fontWeight(.medium)
-                .foregroundStyle(.white)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .frame(height: 56)
-                .background(Color.default)
-                .clipShape(.rect(cornerRadius: 16))
+                .background(Color.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
         })
     }
     
@@ -109,7 +132,7 @@ extension LoginView {
             Button {
                 
             } label: {
-                Image(.facebook)
+                Image("facebook")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 32)
@@ -119,17 +142,19 @@ extension LoginView {
             Button {
                 
             } label: {
-                Image(.google)
+                Image("google")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 32)
                     .padding(8)
             }
-        } //: HStack
+        }
         .frame(maxWidth: .infinity)
     }
 }
+
 #Preview {
     LoginView()
         .environment(SharedData())
 }
+

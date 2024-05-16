@@ -61,6 +61,8 @@ extension SignupView {
     var emailTextfield: some View {
         VStack {
             TextField("Email", text: $email)
+                .keyboardType(.emailAddress)
+                .autocapitalization(.none)
             Rectangle()
                 .frame(height: 0.5)
         }
@@ -70,6 +72,7 @@ extension SignupView {
     var usernameTextfield: some View {
         VStack {
             TextField("Username", text: $username)
+                .autocapitalization(.none)
             Rectangle()
                 .frame(height: 0.5)
         }
@@ -78,7 +81,7 @@ extension SignupView {
     // password text field
     var passwordTextfield: some View {
         VStack {
-            TextField("Password", text: $password)
+            SecureField("Password", text: $password)
             Rectangle()
                 .frame(height: 0.5)
         }
@@ -87,15 +90,21 @@ extension SignupView {
     // signup button for moving on to next screen
     var signupButton: some View {
         Button(action: {
+            // Insert user data into the database
+            DatabaseManager.shared.insertUser(email: email, username: username, password: password)
+            // Clear fields
+            email = ""
+            username = ""
+            password = ""
         }, label: {
             Text("Signup")
                 .font(.title3)
                 .fontWeight(.medium)
-                .foregroundStyle(.white)
+                .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .frame(height: 56)
-                .background(Color.default)
-                .clipShape(.rect(cornerRadius: 16))
+                .background(Color.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 16))
         })
     }
 }
