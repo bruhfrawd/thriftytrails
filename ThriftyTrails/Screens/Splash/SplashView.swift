@@ -38,6 +38,7 @@ struct SplashView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.default)
+        .environment(\.colorScheme, .light)
     }
 }
 

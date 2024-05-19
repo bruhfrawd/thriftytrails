@@ -18,6 +18,7 @@ struct ToDoThingsView: View {
     @State var toDoThings: [OptionModel] = OptionModel.getToDoList()
     @State var activityPerDayList: [OptionModel] = OptionModel.getActivityPerDayList()
     @State var loading = false
+    @State private var navigateToContent = false
     
     // MARK: - Body
     
@@ -43,17 +44,19 @@ struct ToDoThingsView: View {
                     .background()
                     .clipShape(.rect(cornerRadius: 12))
                     .shadow(radius: 10)
-
             }
         })
         .padding(.horizontal)
         .background(Color.secondary.opacity(0.2))
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {}, label: {
                     Text("Skip")
                 })
             }
+        }
+        .navigationDestination(isPresented: $navigateToContent) {
+            ContentView()
         }
     }
 }
@@ -62,27 +65,28 @@ extension ToDoThingsView {
     
     // MARK: - Components
     
-    // title view
     var titleView: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text("Things to do\nin your trip")
                 .font(.title)
                 .fontWeight(.heavy)
-            Text("Let our Ai know what kind of things you would like to do on your trip and we'll suggest the best sights for you!")
+            Text("Let our AI know what kind of things you would like to do on your trip and we'll suggest the best sights for you!")
                 .font(.footnote)
         }
     }
     
-    // subtitle View
     var subtitleView: some View {
         Text("How packed you want your trip?")
             .font(.body)
     }
     
-    // build my trip button that will navigate to next screen
     var buildMyTripButton: some View {
         Button(action: {
             loading = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                loading = false
+                navigateToContent = true
+            }
         }, label: {
             Text("Build my trip")
                 .font(.title2)
@@ -99,3 +103,4 @@ extension ToDoThingsView {
 #Preview {
     ToDoThingsView()
 }
+

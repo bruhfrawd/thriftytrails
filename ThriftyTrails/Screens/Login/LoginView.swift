@@ -13,13 +13,12 @@ struct LoginView: View {
     
     @State var email: String = ""
     @State var password: String = ""
-    @State var navigateToExplore = false
-    @State var showSuccessMessage = false
+    @State var navigateToPlanAdventure = false
     @State var showErrorAlert = false
     @State var loginStatusMessage = ""
 
-    @Environment(SharedData.self) var sharedData
-        
+    @EnvironmentObject var sharedData: SharedData
+    
     // MARK: - Body
     
     var body: some View {
@@ -30,15 +29,10 @@ struct LoginView: View {
             loginButton
             thisIsNotMeButton
             socialLoginButtons
-            if showSuccessMessage {
-                Text(loginStatusMessage)
-                    .foregroundColor(.green)
-                    .padding(.top)
-            }
         }
         .padding(.horizontal)
-        .navigationDestination(isPresented: $navigateToExplore) {
-            ExploreView()
+        .navigationDestination(isPresented: $navigateToPlanAdventure) {
+            PlanAdventureView()
         }
         .alert(isPresented: $showErrorAlert) {
             Alert(title: Text("Login Failed"), message: Text("Invalid email or password"), dismissButton: .default(Text("OK")))
@@ -49,10 +43,10 @@ struct LoginView: View {
 extension LoginView {
     
     // MARK: - Components
-    // title
+    
     var header: some View {
         HStack {
-            Text("Welcome Back\nKenvin")
+            Text("Welcome Back\nKevin")
                 .font(.title)
                 .fontWeight(.bold)
             
@@ -72,7 +66,6 @@ extension LoginView {
         }
     }
     
-    // email text field
     var emailTextfield: some View {
         VStack {
             TextField("Email", text: $email)
@@ -83,7 +76,6 @@ extension LoginView {
         }
     }
     
-    // password text field
     var passwordTextfield: some View {
         VStack {
             SecureField("Password", text: $password)
@@ -92,17 +84,11 @@ extension LoginView {
         }
     }
     
-    // login button to go to next screen
     var loginButton: some View {
         Button(action: {
             if DatabaseManager.shared.verifyUser(email: email, password: password) {
                 loginStatusMessage = "Login Successful!"
-                showSuccessMessage = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    showSuccessMessage = false
-                    sharedData.screen = .explore // Navigate to ExploreView first
-                    navigateToExplore = true
-                }
+                navigateToPlanAdventure = true
             } else {
                 showErrorAlert = true
             }
@@ -118,7 +104,6 @@ extension LoginView {
         })
     }
     
-    // button for signup
     var thisIsNotMeButton: some View {
         NavigationLink {
             SignupView()
@@ -127,7 +112,6 @@ extension LoginView {
         }
     }
     
-    // social login buttons container view
     var socialLoginButtons: some View {
         HStack {
             Button {
@@ -151,10 +135,11 @@ extension LoginView {
             }
         }
         .frame(maxWidth: .infinity)
+        
     }
 }
 
 #Preview {
     LoginView()
-        .environment(SharedData())
+        .environmentObject(SharedData())
 }

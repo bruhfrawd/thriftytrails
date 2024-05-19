@@ -9,9 +9,11 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
+    @EnvironmentObject var sharedData: SharedData
+    
     var body: some View {
         TabView {
-            NavigationView {
+            NavigationStack {
                 ExploreView()
             }
             .tabItem {
@@ -19,27 +21,37 @@ struct ContentView: View {
                 Text("Explore")
             }
             
-            TripView()
-                .tabItem {
-                    Image(systemName: "airplane")
-                    Text("Trips")
-                }
+            NavigationStack {
+                TripView()
+            }
+            .tabItem {
+                Image(systemName: "airplane")
+                Text("Trips")
+            }
             
-            ChatView()
-                .tabItem {
-                    Image(systemName: "message")
-                    Text("Messages")
-                }
+            NavigationStack {
+                ChatView()
+            }
+            .tabItem {
+                Image(systemName: "message")
+                Text("Messages")
+            }
             
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("Profile")
-                }
+            NavigationStack {
+                ProfileView()
+            }
+            .tabItem {
+                Image(systemName: "person.crop.circle")
+                Text("Profile")
+            }
         }
+        .environmentObject(sharedData)
         .environment(\.colorScheme, .light)
+        .navigationBarBackButtonHidden(true)
     }
+    
 }
+
 
 #Preview {
     ContentView()

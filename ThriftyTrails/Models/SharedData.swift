@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-class SharedData {
+class SharedData: ObservableObject {
     
     enum Screen {
         case splash
@@ -21,3 +21,4 @@ class SharedData {
     
     var screen: Screen = .splash
 }
+
