@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		5B8C38672BF68DD100249C1E /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5B8C38662BF68DD100249C1E /* SQLite */; };
 		5B8C38692BF6900B00249C1E /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38682BF6900B00249C1E /* DatabaseManager.swift */; };
+		5B8C386B2BF9948500249C1E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C386A2BF9948500249C1E /* ExploreView.swift */; };
+		5B8C386D2BF9962300249C1E /* IternaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C386C2BF9962300249C1E /* IternaryView.swift */; };
+		5B8C386F2BF9973400249C1E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C386E2BF9973400249C1E /* AboutView.swift */; };
+		5B8C38712BF9992500249C1E /* HotelVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38702BF9992500249C1E /* HotelVIew.swift */; };
+		5B8C38732BF99E0600249C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38722BF99E0600249C1E /* ContentView.swift */; };
+		5B8C38752BF99F2600249C1E /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38742BF99F2600249C1E /* TripView.swift */; };
+		5B8C38772BF99F6000249C1E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38762BF99F6000249C1E /* ChatView.swift */; };
+		5B8C38792BF99F7100249C1E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C38782BF99F7100249C1E /* ProfileView.swift */; };
+		5B8C387B2BF9A04F00249C1E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C387A2BF9A04F00249C1E /* Item.swift */; };
 		931A9DAC2BE9E8E300C18D83 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931A9DAB2BE9E8E300C18D83 /* CardListView.swift */; };
 		937888D72BE8AD2300FA876D /* PlanAdventureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888D62BE8AD2300FA876D /* PlanAdventureView.swift */; };
 		937888E92BE8BEA300FA876D /* RoundSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937888E52BE8BEA300FA876D /* RoundSlider.swift */; };
@@ -28,6 +37,15 @@
 
 /* Begin PBXFileReference section */
 		5B8C38682BF6900B00249C1E /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		5B8C386A2BF9948500249C1E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		5B8C386C2BF9962300249C1E /* IternaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IternaryView.swift; sourceTree = "<group>"; };
+		5B8C386E2BF9973400249C1E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		5B8C38702BF9992500249C1E /* HotelVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelVIew.swift; sourceTree = "<group>"; };
+		5B8C38722BF99E0600249C1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B8C38742BF99F2600249C1E /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		5B8C38762BF99F6000249C1E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5B8C38782BF99F7100249C1E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5B8C387A2BF9A04F00249C1E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		931A9DAB2BE9E8E300C18D83 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		937888D62BE8AD2300FA876D /* PlanAdventureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAdventureView.swift; sourceTree = "<group>"; };
 		937888E52BE8BEA300FA876D /* RoundSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundSlider.swift; sourceTree = "<group>"; };
@@ -138,6 +156,15 @@
 				938DEE242BE7F8E000C65835 /* Signup */,
 				938DEE1D2BE7F6C000C65835 /* Splash */,
 				938DEE1A2BE7F69400C65835 /* Login */,
+				5B8C386A2BF9948500249C1E /* ExploreView.swift */,
+				5B8C386C2BF9962300249C1E /* IternaryView.swift */,
+				5B8C386E2BF9973400249C1E /* AboutView.swift */,
+				5B8C38702BF9992500249C1E /* HotelVIew.swift */,
+				5B8C38722BF99E0600249C1E /* ContentView.swift */,
+				5B8C38742BF99F2600249C1E /* TripView.swift */,
+				5B8C38762BF99F6000249C1E /* ChatView.swift */,
+				5B8C38782BF99F7100249C1E /* ProfileView.swift */,
+				5B8C387A2BF9A04F00249C1E /* Item.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -270,10 +297,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				938DEE222BE7F7FA00C65835 /* SharedData.swift in Sources */,
+				5B8C38712BF9992500249C1E /* HotelVIew.swift in Sources */,
 				938DEE1C2BE7F69F00C65835 /* LoginView.swift in Sources */,
+				5B8C38752BF99F2600249C1E /* TripView.swift in Sources */,
+				5B8C38772BF99F6000249C1E /* ChatView.swift in Sources */,
+				5B8C386F2BF9973400249C1E /* AboutView.swift in Sources */,
+				5B8C387B2BF9A04F00249C1E /* Item.swift in Sources */,
 				937888D72BE8AD2300FA876D /* PlanAdventureView.swift in Sources */,
 				937888EB2BE8BEA300FA876D /* Comparable-Clamped.swift in Sources */,
+				5B8C386B2BF9948500249C1E /* ExploreView.swift in Sources */,
 				938DEDF02BE7F66700C65835 /* ThriftyTrailsApp.swift in Sources */,
+				5B8C38732BF99E0600249C1E /* ContentView.swift in Sources */,
+				5B8C386D2BF9962300249C1E /* IternaryView.swift in Sources */,
 				937888EA2BE8BEA300FA876D /* RangeSlider.swift in Sources */,
 				5B8C38692BF6900B00249C1E /* DatabaseManager.swift in Sources */,
 				938DEE302BE8001B00C65835 /* OptionModel.swift in Sources */,
@@ -282,6 +317,7 @@
 				938DEE1F2BE7F6CA00C65835 /* SplashView.swift in Sources */,
 				938DEE2E2BE7FF6700C65835 /* CardView.swift in Sources */,
 				931A9DAC2BE9E8E300C18D83 /* CardListView.swift in Sources */,
+				5B8C38792BF99F7100249C1E /* ProfileView.swift in Sources */,
 				938DEE2B2BE7FD4D00C65835 /* ToDoThingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

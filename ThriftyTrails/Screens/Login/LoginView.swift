@@ -13,7 +13,7 @@ struct LoginView: View {
     
     @State var email: String = ""
     @State var password: String = ""
-    @State var goToPlanAdventure = false
+    @State var navigateToExplore = false
     @State var showSuccessMessage = false
     @State var showErrorAlert = false
     @State var loginStatusMessage = ""
@@ -37,8 +37,8 @@ struct LoginView: View {
             }
         }
         .padding(.horizontal)
-        .navigationDestination(isPresented: $goToPlanAdventure) {
-            PlanAdventureView()
+        .navigationDestination(isPresented: $navigateToExplore) {
+            ExploreView()
         }
         .alert(isPresented: $showErrorAlert) {
             Alert(title: Text("Login Failed"), message: Text("Invalid email or password"), dismissButton: .default(Text("OK")))
@@ -100,7 +100,8 @@ extension LoginView {
                 showSuccessMessage = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     showSuccessMessage = false
-                    goToPlanAdventure = true
+                    sharedData.screen = .explore // Navigate to ExploreView first
+                    navigateToExplore = true
                 }
             } else {
                 showErrorAlert = true
@@ -157,4 +158,3 @@ extension LoginView {
     LoginView()
         .environment(SharedData())
 }
-

@@ -20,9 +20,20 @@ struct ThriftyTrailsApp: App {
                     SplashView()
                 case .login:
                     LoginView()
-                }
+                case .explore:
+                    ExploreView()
+                    ContentView()
+                case .itinerary:
+                    ItineraryView()
+                    ContentView()
+                case .about:
+                    AboutView()
+                    ContentView()
+                case .hotel:
+                    HotelView()
+                    ContentView()                }
             }
+            .environment(sharedData)
         }
-        .environment(sharedData)
     }
 }

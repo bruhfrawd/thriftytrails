@@ -13,6 +13,10 @@ class SharedData {
     enum Screen {
         case splash
         case login
+        case explore
+        case itinerary
+        case about
+        case hotel
     }
     
     var screen: Screen = .splash
